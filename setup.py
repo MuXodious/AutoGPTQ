@@ -6,9 +6,6 @@ import subprocess
 import math
 import platform
 
-os.environ["CC"] = "g++"
-os.environ["CXX"] = "g++"
-
 common_setup_kwargs = {
     "version": "0.5.0.dev0",
     "name": "auto_gptq",

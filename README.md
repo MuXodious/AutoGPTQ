@@ -74,11 +74,21 @@ AutoGPTQ can be installed with the Triton dependency with `pip install auto-gptq
 
 ### Install from source
 
+Setup Conda:
+
+```
+conda create --name autogptq python=3.10 -y
+conda activate autogptq
+conda install -c "nvidia/label/cuda-12.1.1" cuda-toolkit
+conda install -c "nvidia/label/cuda-12.1.1" cuda-nvcc
+conda install conda-build gcc_linux-64 gxx_linux-64 gfortran_linux-64
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+conda install numpy gekko pandas
+```
+
 Clone the source code:
 ```shell
 git clone https://github.com/PanQiWei/AutoGPTQ.git && cd AutoGPTQ
-
-A few packages are required in order to build from source: `pip install numpy gekko pandas`.
 
 ```
 Then, install from source:
@@ -339,3 +349,4 @@ pytest tests/ -s
 
 
 [![Star History Chart](https://api.star-history.com/svg?repos=PanQiwei/AutoGPTQ&type=Date)](https://star-history.com/#PanQiWei/AutoGPTQ&Date)
+
