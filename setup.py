@@ -7,7 +7,7 @@ import math
 import platform
 
 common_setup_kwargs = {
-    "version": "0.5.0.dev0",
+    "version": "0.6.0.dev0",
     "name": "auto_gptq",
     "author": "PanQiWei",
     "description": "An easy-to-use LLMs quantization package with user-friendly apis, based on GPTQ algorithm.",
