@@ -77,8 +77,13 @@ requirements = [
     "gekko",
     "torch>=1.13.0",
     "safetensors",
+<<<<<<< HEAD
     "transformers>=4.31.0",
     "peft>=0.5.0",
+=======
+    "transformers>=4.34.0",
+    "peft",
+>>>>>>> fc1184e7bcb0d3df75d80f45b5a53747c0d6bd21
     "tqdm",
 ]
 
