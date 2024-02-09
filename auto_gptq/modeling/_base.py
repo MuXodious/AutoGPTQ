@@ -522,9 +522,6 @@ class BaseGPTQForCausalLM(nn.Module, PushToHubMixin):
                 repo_type="model",
             )
 
-<<<<<<< HEAD
-    def save_quantized(self, save_dir: str, use_safetensors: bool = True, safetensors_metadata: Optional[Dict[str, str]] = None):
-=======
     def save_quantized(
         self,
         save_dir: str,
@@ -533,7 +530,6 @@ class BaseGPTQForCausalLM(nn.Module, PushToHubMixin):
         max_shard_size: str = "10GB",
         model_base_name: Optional[str] = None
     ):
->>>>>>> fc1184e7bcb0d3df75d80f45b5a53747c0d6bd21
         """save quantized model and configs to local disk"""
         os.makedirs(save_dir, exist_ok=True)
 
